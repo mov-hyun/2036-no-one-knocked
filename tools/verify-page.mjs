@@ -73,7 +73,7 @@ async function auditPage(pathname, viewport, screenshotName) {
 
   await page.goto(`${baseUrl}${pathname}`, { waitUntil: "networkidle" });
   const metrics = await page.evaluate(() => {
-    const hero = document.querySelector(".hero-image");
+    const hero = document.querySelector("[data-hero-image]");
     return {
       title: document.title,
       h1: document.querySelector("h1")?.textContent?.trim() || "",
