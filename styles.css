@@ -1,25 +1,25 @@
 :root {
-  color-scheme: light;
-  --ink: #14211f;
-  --ink-strong: #07110f;
-  --muted: #53615d;
-  --faint: #7a8781;
-  --paper: #edf1ed;
-  --paper-strong: #fbfcf8;
-  --surface: rgba(251, 252, 248, 0.88);
-  --surface-strong: rgba(255, 255, 250, 0.94);
-  --surface-cool: rgba(229, 240, 235, 0.86);
-  --line: rgba(20, 33, 31, 0.14);
-  --line-strong: rgba(31, 115, 82, 0.32);
-  --mint: #2f9f73;
-  --mint-soft: #d8f3e6;
-  --mint-deep: #116246;
-  --amber: #c78320;
-  --amber-soft: #f7e7c7;
-  --red: #d94e43;
-  --red-soft: #f5d8d4;
-  --slate: #54656d;
-  --shadow: 0 18px 54px rgba(14, 25, 22, 0.16);
+  color-scheme: dark;
+  --ink: #e9f8f5;
+  --ink-strong: #ffffff;
+  --muted: #b4c7c2;
+  --faint: #78908c;
+  --paper: #061011;
+  --paper-strong: #0b1719;
+  --surface: rgba(7, 18, 20, 0.78);
+  --surface-strong: rgba(12, 25, 27, 0.9);
+  --surface-cool: rgba(9, 36, 41, 0.82);
+  --line: rgba(107, 255, 218, 0.18);
+  --line-strong: rgba(107, 255, 218, 0.42);
+  --mint: #5affd0;
+  --mint-soft: rgba(90, 255, 208, 0.16);
+  --mint-deep: #89ffe0;
+  --amber: #ffd166;
+  --amber-soft: rgba(255, 209, 102, 0.16);
+  --red: #ff5c70;
+  --red-soft: rgba(255, 92, 112, 0.16);
+  --slate: #93aeb7;
+  --shadow: 0 22px 64px rgba(0, 0, 0, 0.34);
   font-family:
     "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR",
     system-ui, sans-serif;
@@ -84,8 +84,8 @@ a {
   justify-content: space-between;
   gap: 24px;
   padding: 14px clamp(18px, 4vw, 54px);
-  border-bottom: 1px solid rgba(20, 33, 31, 0.1);
-  background: rgba(251, 252, 248, 0.82);
+  border-bottom: 1px solid rgba(107, 255, 218, 0.16);
+  background: rgba(3, 9, 10, 0.76);
   backdrop-filter: blur(16px);
 }
 
@@ -109,7 +109,7 @@ a {
   height: 30px;
   border: 1px solid var(--line-strong);
   border-radius: 6px;
-  background: var(--mint-soft);
+  background: rgba(90, 255, 208, 0.12);
   color: var(--mint-deep);
   font-size: 0.8rem;
 }
@@ -121,13 +121,13 @@ a {
 }
 
 .nav a {
-  color: rgba(20, 33, 31, 0.76);
+  color: rgba(233, 248, 245, 0.78);
   text-decoration: none;
 }
 
 .nav a:hover,
 .nav a:focus-visible {
-  color: var(--mint-deep);
+  color: var(--mint);
 }
 
 .tower-hero {
@@ -155,8 +155,8 @@ a {
 .hero-scrim {
   z-index: -1;
   background:
-    linear-gradient(90deg, rgba(237, 241, 237, 0.72), rgba(237, 241, 237, 0.08) 31%, rgba(237, 241, 237, 0.02) 67%, rgba(237, 241, 237, 0.74)),
-    linear-gradient(0deg, rgba(237, 241, 237, 0.84), rgba(237, 241, 237, 0.02) 42%, rgba(237, 241, 237, 0.2));
+    linear-gradient(90deg, rgba(2, 7, 10, 0.88), rgba(2, 7, 10, 0.18) 31%, rgba(2, 7, 10, 0.06) 67%, rgba(2, 7, 10, 0.84)),
+    linear-gradient(0deg, rgba(2, 7, 10, 0.78), rgba(2, 7, 10, 0.02) 42%, rgba(2, 7, 10, 0.42));
 }
 
 .hero-grid {
@@ -222,7 +222,7 @@ a {
 
 .hero-copy {
   margin: 24px 0 0;
-  color: var(--ink);
+  color: rgba(233, 248, 245, 0.88);
   font-size: 1.04rem;
   line-height: 1.82;
   word-break: keep-all;
@@ -233,7 +233,7 @@ a {
   gap: 8px;
   margin-top: 22px;
   padding: 16px;
-  background: rgba(216, 243, 230, 0.9);
+  background: rgba(90, 255, 208, 0.14);
 }
 
 .connection-grade span,
@@ -244,7 +244,7 @@ a {
 }
 
 .connection-grade strong {
-  color: var(--mint-deep);
+  color: var(--mint);
   font-family: "Consolas", "SFMono-Regular", monospace;
   font-size: 3.4rem;
   line-height: 0.95;
@@ -283,24 +283,24 @@ a {
 
 .button.primary {
   background: var(--mint);
-  color: #f8fff9;
+  color: #031110;
 }
 
 .button.secondary {
-  border-color: rgba(20, 33, 31, 0.18);
-  background: rgba(255, 255, 250, 0.76);
+  border-color: rgba(233, 248, 245, 0.24);
+  background: rgba(233, 248, 245, 0.1);
   color: var(--ink);
 }
 
 .tower-stage {
   position: relative;
   min-height: 560px;
-  border: 1px solid rgba(255, 255, 250, 0.58);
+  border: 1px solid rgba(233, 248, 245, 0.2);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.02);
   box-shadow:
-    inset 0 0 0 1px rgba(20, 33, 31, 0.08),
-    0 18px 54px rgba(14, 25, 22, 0.12);
+    inset 0 0 0 1px rgba(107, 255, 218, 0.08),
+    0 18px 54px rgba(0, 0, 0, 0.24);
 }
 
 .floor-labels {
@@ -311,11 +311,11 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: rgba(20, 33, 31, 0.62);
+  color: rgba(233, 248, 245, 0.7);
   font-family: "Consolas", "SFMono-Regular", monospace;
   font-size: 0.82rem;
   font-weight: 900;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.75);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .tower-hotspot {
@@ -327,7 +327,7 @@ a {
   padding: 12px 14px;
   border: 1px solid rgba(47, 159, 115, 0.42);
   border-radius: 6px;
-  background: rgba(251, 252, 248, 0.9);
+  background: rgba(8, 24, 25, 0.88);
   color: var(--ink);
   text-align: left;
   cursor: pointer;
@@ -335,7 +335,7 @@ a {
 }
 
 .tower-hotspot span {
-  color: var(--mint-deep);
+  color: var(--mint);
   font-family: "Consolas", "SFMono-Regular", monospace;
   font-size: 0.76rem;
   font-weight: 900;
@@ -363,18 +363,18 @@ a {
   top: 54%;
   left: 27%;
   border-color: rgba(199, 131, 32, 0.46);
-  background: rgba(255, 249, 236, 0.93);
+  background: rgba(37, 28, 10, 0.88);
 }
 
 .tower-hotspot.delayed span {
-  color: #8d5b13;
+  color: var(--amber);
 }
 
 .tower-hotspot.broken {
   top: 55%;
   right: 10%;
   border-color: rgba(217, 78, 67, 0.48);
-  background: rgba(255, 245, 244, 0.94);
+  background: rgba(43, 11, 16, 0.9);
 }
 
 .tower-hotspot.broken span {
@@ -391,13 +391,13 @@ a {
   padding: 12px 14px;
   border: 1px solid rgba(47, 159, 115, 0.34);
   border-radius: 6px;
-  background: rgba(251, 252, 248, 0.86);
+  background: rgba(7, 18, 20, 0.82);
   color: var(--ink);
   box-shadow: var(--shadow);
 }
 
 .tower-caption span {
-  color: var(--mint-deep);
+  color: var(--mint);
   font-family: "Consolas", "SFMono-Regular", monospace;
   font-size: 0.78rem;
   font-weight: 900;
@@ -407,7 +407,7 @@ a {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background: rgba(251, 252, 248, 0.92);
+  background: rgba(7, 18, 20, 0.86);
 }
 
 .principle-console h2 {
@@ -438,9 +438,9 @@ a {
   row-gap: 4px;
   width: 100%;
   padding: 13px;
-  border: 1px solid rgba(20, 33, 31, 0.12);
+  border: 1px solid rgba(233, 248, 245, 0.12);
   border-radius: 6px;
-  background: rgba(255, 255, 250, 0.78);
+  background: rgba(233, 248, 245, 0.06);
   color: var(--ink);
   text-align: left;
   cursor: pointer;
@@ -458,7 +458,7 @@ a {
 
 .principle-button span {
   grid-row: span 2;
-  color: var(--mint-deep);
+  color: var(--mint);
   font-family: "Consolas", "SFMono-Regular", monospace;
   font-weight: 900;
 }
@@ -478,12 +478,12 @@ a {
   padding: 16px;
   border: 1px solid rgba(47, 159, 115, 0.3);
   border-radius: 6px;
-  background: rgba(216, 243, 230, 0.8);
+  background: rgba(90, 255, 208, 0.14);
 }
 
 .detail-label {
   margin: 0 0 8px;
-  color: var(--mint-deep);
+  color: var(--mint);
   font-size: 0.75rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -515,13 +515,13 @@ a {
 .system-strip > div {
   min-height: 82px;
   padding: 14px;
-  background: rgba(251, 252, 248, 0.9);
+  background: rgba(7, 18, 20, 0.82);
 }
 
 .system-strip strong {
   display: block;
   margin-top: 8px;
-  color: var(--mint-deep);
+  color: var(--mint);
   font-family: "Consolas", "SFMono-Regular", monospace;
   font-size: 1.34rem;
 }
@@ -560,28 +560,28 @@ a {
 }
 
 .premortem-band {
-  background: #f6f8f4;
+  background: #081316;
 }
 
 .diagnosis-section {
-  background: #e7ece7;
+  background: #0c191c;
 }
 
 .response-section {
-  background: #f2f5f0;
+  background: #071012;
 }
 
 .evidence-section {
-  background: #eaf0eb;
+  background: #0d1a1a;
 }
 
 .rubric-section {
-  background: #23302d;
+  background: #051011;
   color: #fff;
 }
 
 .cta-section {
-  background: #f7f8f4;
+  background: #101d1f;
 }
 
 .section-heading {
@@ -679,12 +679,12 @@ a {
 
 .diagnosis-stack article {
   padding: 24px;
-  background: rgba(255, 255, 250, 0.86);
+  background: var(--surface-strong);
 }
 
 .diagnosis-stack article:nth-child(4) {
   border-color: rgba(217, 78, 67, 0.28);
-  background: rgba(255, 245, 244, 0.82);
+  background: rgba(43, 11, 16, 0.74);
 }
 
 .response-grid {
@@ -696,7 +696,7 @@ a {
 .response-grid article {
   min-height: 300px;
   padding: 24px;
-  background: rgba(255, 255, 250, 0.9);
+  background: var(--surface-strong);
 }
 
 .response-grid span {
@@ -713,7 +713,7 @@ a {
   grid-column: span 4;
   min-height: auto;
   border-color: rgba(199, 131, 32, 0.28);
-  background: rgba(255, 249, 236, 0.9);
+  background: rgba(39, 29, 9, 0.76);
 }
 
 .response-grid .wide span {
@@ -731,7 +731,7 @@ a {
 .evidence-grid article {
   min-height: 300px;
   padding: 22px;
-  background: rgba(255, 255, 250, 0.9);
+  background: var(--surface-strong);
 }
 
 .evidence-grid a {
@@ -739,7 +739,7 @@ a {
   align-items: center;
   min-height: 38px;
   margin-top: 6px;
-  color: var(--mint-deep);
+  color: var(--mint);
   font-weight: 900;
   text-decoration-color: rgba(47, 159, 115, 0.42);
   text-underline-offset: 4px;
@@ -788,7 +788,7 @@ a {
 
 .site-footer {
   padding: 28px clamp(18px, 4vw, 56px);
-  border-top: 1px solid rgba(20, 33, 31, 0.08);
+  border-top: 1px solid rgba(107, 255, 218, 0.1);
   background: var(--paper-strong);
   color: var(--muted);
 }
@@ -858,8 +858,8 @@ a {
 
   .hero-scrim {
     background:
-      linear-gradient(180deg, rgba(237, 241, 237, 0.86), rgba(237, 241, 237, 0.22) 28%, rgba(237, 241, 237, 0.88)),
-      linear-gradient(90deg, rgba(237, 241, 237, 0.82), rgba(237, 241, 237, 0.22));
+      linear-gradient(180deg, rgba(2, 7, 10, 0.88), rgba(2, 7, 10, 0.18) 28%, rgba(2, 7, 10, 0.88)),
+      linear-gradient(90deg, rgba(2, 7, 10, 0.76), rgba(2, 7, 10, 0.12));
   }
 
   .story-rail,
@@ -952,6 +952,13 @@ a {
 }
 
 .proposal-body {
+  --ink: #162022;
+  --ink-strong: #07110f;
+  --muted: #5b676b;
+  --paper-strong: #fffdf7;
+  --line: rgba(22, 32, 34, 0.16);
+  --mint: #2f9f73;
+  --mint-deep: #0f393c;
   background: #dfe5e2;
   color: var(--ink);
 }

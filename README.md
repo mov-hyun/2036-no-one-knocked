@@ -12,7 +12,7 @@ https://mov-hyun.github.io/2036-no-one-knocked/
 
 This project imagines a public AI care system that does not fail by malfunctioning. Instead, it fails because it optimizes too well for measurable efficiency.
 
-The live page is designed as a readable dystopian diorama: a public-housing tower with a broken "contact floor" line running through the building. In the scenario, check-ins, risk scores, and dashboard stability gradually replace the human visits and local relationships that made care meaningful. The system keeps reporting normal conditions while the social infrastructure around older adults quietly disappears.
+The live page is designed as a dystopian cyberpunk diorama: a dark public-housing tower with lit interiors and a broken "contact floor" line running through the building. In the scenario, check-ins, risk scores, and dashboard stability gradually replace the human visits and local relationships that made care meaningful. The system keeps reporting normal conditions while the social infrastructure around older adults quietly disappears.
 
 ## Files
 
@@ -20,7 +20,7 @@ The live page is designed as a readable dystopian diorama: a public-housing towe
 - `proposal.html` - A4 one-page proposal layout
 - `output/playwright/proposal.pdf` - generated one-page PDF proposal
 - `planning/research-backed-concept.md` - research-backed planning document
-- `assets/contact-floor-tower-rain.png` - generated diorama hero visual
+- `assets/contact-floor-tower-cyberpunk.png` - generated diorama hero visual
 
 ## Submission Context
 
