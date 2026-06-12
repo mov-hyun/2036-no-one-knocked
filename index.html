@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>2036, No One Knocked | KAIST AIxFailure</title>
+    <title>2036, No One Knocked | Contact Floor Tower</title>
     <meta
       name="description"
       content="KAIST 실패연구소 2026 AIx실패 아이디어 공모전 보완 자료. 2036년, 모든 지표가 정상인 동안 방문과 사회적 연결이 사라진 AI 돌봄 실패 시나리오."
@@ -13,7 +13,7 @@
       property="og:description"
       content="모든 시스템은 정상으로 판정했다. 하지만 아무도 문을 두드리지 않았다."
     />
-    <meta property="og:image" content="assets/diorama-command-center-rain.png" />
+    <meta property="og:image" content="assets/contact-floor-tower-rain.png" />
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -25,7 +25,7 @@
         <span>No One Knocked</span>
       </a>
       <nav class="nav" aria-label="주요 섹션">
-        <a href="#failure">실패 로그</a>
+        <a href="#tower">디오라마</a>
         <a href="#diagnosis">원인 진단</a>
         <a href="#response">대응 방안</a>
         <a href="#evidence">근거</a>
@@ -34,116 +34,131 @@
     </header>
 
     <main id="main">
-      <section id="top" class="diorama-hero" aria-labelledby="hero-title">
+      <section id="top" class="tower-hero" aria-labelledby="hero-title">
         <img
-          class="diorama-image"
-          src="assets/diorama-command-center-rain.png"
-          alt="폭우가 내리는 2036년 도시의 공공 AI 돌봄 관제센터와 공동주택 복도를 단면으로 보여주는 디오라마"
+          class="tower-image"
+          src="assets/contact-floor-tower-rain.png"
+          alt="비 내리는 2036년 공공주택을 단면으로 보여주는 타워 디오라마. 여러 방이 보이고 중간 층을 가로지르는 접촉 최저선 일부가 끊겨 있다."
           data-hero-image
         />
-        <div class="rain-field" aria-hidden="true"></div>
-        <div class="hero-mask" aria-hidden="true"></div>
+        <div class="hero-scrim" aria-hidden="true"></div>
 
         <div class="hero-grid">
-          <aside class="mission-rail" aria-label="작품 개요">
+          <aside class="story-rail" aria-label="작품 개요">
             <p class="eyebrow">KAIST AIxFailure Idea Contest 2026</p>
             <p class="year-stamp">2036</p>
             <h1 id="hero-title">No One Knocked</h1>
             <p class="hero-copy">
-              모든 수치는 정상으로 분류됐다. 위험 점수는 안정권이었고, 방문 권고는
-              자동으로 뒤로 밀렸다. 실패는 AI가 멈춘 순간이 아니라, 시스템이 너무
-              매끄럽게 작동한 날 도착했다.
+              AI는 위험 점수를 낮췄다. 예산은 절감됐고, 대시보드는 안정적이었다.
+              그러나 사람이 문을 두드리는 최소한의 접촉선은 조용히 끊어졌다.
             </p>
+            <div class="connection-grade" aria-label="2036년 연결 등급">
+              <span>현재 연결 상태</span>
+              <strong>C-</strong>
+              <small>모든 생체 수치는 정상, 대면 접촉은 기준 미달</small>
+            </div>
             <div class="hero-actions" aria-label="주요 행동">
-              <a class="button primary" href="#failure">실패 로그 열기</a>
+              <a class="button primary" href="#tower">디오라마 보기</a>
               <a class="button secondary" href="proposal.html">1페이지 제안서</a>
             </div>
-            <dl class="submission-meta" aria-label="제출 정보">
-              <div>
-                <dt>핵심 실패</dt>
-                <dd>AI 오작동이 아닌 KPI 오설계</dd>
-              </div>
-              <div>
-                <dt>마감</dt>
-                <dd><span data-deadline-label>2026.07.17 23:59</span></dd>
-              </div>
-            </dl>
           </aside>
 
-          <div class="stage-window" aria-label="시민 돌봄 AI 관제센터 디오라마">
-            <button class="scene-hotspot is-active" type="button" data-log-index="0">
-              <span>통제층</span>
-              <strong>ALL SYSTEMS NORMAL</strong>
-            </button>
-            <button class="scene-hotspot lower" type="button" data-log-index="2">
-              <span>생활층</span>
-              <strong>VISIT DELAYED</strong>
-            </button>
-            <div class="stage-caption">
-              <span>Room 2036-11-08 / Apt-902</span>
-              <strong>독거노인 케어 모니터링 대상</strong>
+          <section id="tower" class="tower-stage" aria-label="Contact Floor Tower 디오라마">
+            <div class="floor-labels" aria-hidden="true">
+              <span>F07</span>
+              <span>F06</span>
+              <span>F05</span>
+              <span>F04</span>
+              <span>F03</span>
+              <span>F02</span>
+              <span>F01</span>
             </div>
-          </div>
+            <button class="tower-hotspot is-active" type="button" data-log-index="0">
+              <span>F05</span>
+              <strong>AI 모니터링 중</strong>
+              <small>위험도 낮음</small>
+            </button>
+            <button class="tower-hotspot delayed" type="button" data-log-index="2">
+              <span>F03</span>
+              <strong>방문 의자만 남음</strong>
+              <small>찾아온 기록 없음</small>
+            </button>
+            <button class="tower-hotspot broken" type="button" data-log-index="3">
+              <span>F03</span>
+              <strong>접촉선 단절</strong>
+              <small>최소 기준선 미달</small>
+            </button>
+            <div class="tower-caption">
+              <span>Contact Floor</span>
+              <strong>사람이 방문하는 최소 기준선</strong>
+            </div>
+          </section>
 
-          <aside class="failure-console" id="failure" aria-labelledby="failure-title">
-            <div class="console-header">
-              <p class="eyebrow">failure log</p>
-              <h2 id="failure-title">모든 단계에서 시스템은 정상이라고 판단했다</h2>
+          <aside class="principle-console" aria-labelledby="principle-title">
+            <p class="eyebrow">care+ protocol</p>
+            <h2 id="principle-title">다섯 가지 대응 원칙</h2>
+            <p>
+              기술을 금지하는 제안이 아니다. AI 돌봄이 사람의 관계망을 삭제하지
+              못하도록 공공 시스템의 기본값을 다시 설계한다.
+            </p>
+            <div class="principle-list" role="list" aria-label="CARE+ 원칙">
+              <button class="principle-button is-active" type="button" data-log-index="0">
+                <span>01</span>
+                <strong>Contact Floor</strong>
+                <small>모든 사람이 보장받는 최소 대면 연결 기준선</small>
+              </button>
+              <button class="principle-button" type="button" data-log-index="1">
+                <span>02</span>
+                <strong>Accountability Log</strong>
+                <small>AI 판단과 개입 과정을 기록하고 설명</small>
+              </button>
+              <button class="principle-button" type="button" data-log-index="2">
+                <span>03</span>
+                <strong>Relationship Metric</strong>
+                <small>관계의 질을 측정하고 성과 평가에 반영</small>
+              </button>
+              <button class="principle-button" type="button" data-log-index="3">
+                <span>04</span>
+                <strong>Exit & Escalation</strong>
+                <small>연결이 끊기면 사람이 도움을 요청</small>
+              </button>
+              <button class="principle-button" type="button" data-log-index="4">
+                <span>05</span>
+                <strong>Institutional Oversight</strong>
+                <small>기관 책임과 시민 감시로 구조적 실패 예방</small>
+              </button>
             </div>
-            <div class="log-buttons" role="list" aria-label="2036년 실패 로그">
-              <button class="log-button is-active" type="button" data-log-index="0">
-                <span>2036.05.19 09:00</span>
-                <strong>위험 점수 58 → 61</strong>
-                <small>수면 패턴 변동 감지 · 자동 평가</small>
-              </button>
-              <button class="log-button" type="button" data-log-index="1">
-                <span>2036.05.21 09:15</span>
-                <strong>방문 권고 생성</strong>
-                <small>주 1회 방문 권고 생성 · 시스템</small>
-              </button>
-              <button class="log-button" type="button" data-log-index="2">
-                <span>2036.05.22 10:00</span>
-                <strong>방문 배정 지연</strong>
-                <small>현장 방문 실행되지 않음 · 누락</small>
-              </button>
-              <button class="log-button" type="button" data-log-index="3">
-                <span>2036.05.30 08:10</span>
-                <strong>위험 점수 72 → 89</strong>
-                <small>응급 가능성 상승 · 뒤늦은 위험</small>
-              </button>
-            </div>
-            <article class="log-detail" data-log-detail aria-live="polite">
-              <p class="detail-label">현재 선택 로그</p>
-              <h3>위험은 감지됐지만 방문은 밀렸다</h3>
+            <article class="principle-detail" data-log-detail aria-live="polite">
+              <p class="detail-label">현재 선택 원칙</p>
+              <h3>Contact Floor</h3>
               <p>
-                점수는 아직 임계값 아래였고, 대면 방문은 더 높은 점수의 가구로
-                재배정됐다. 시스템은 돌봄의 위험을 계산했지만 관계의 부재는 계산하지
-                않았다.
+                위험 점수와 무관하게 최소 대면 접촉선을 둔다. 월 1회 이상 대면 확인
+                또는 지역 관계망 확인을 공공 AI 돌봄의 기본 조건으로 만든다.
               </p>
             </article>
           </aside>
         </div>
 
-        <div class="system-strip" aria-label="2036년 AI 케어 대시보드 요약">
+        <div class="system-strip" aria-label="2036년 연결 대시보드 요약">
           <div>
-            <span>종합 상태</span>
-            <strong>NORMAL</strong>
+            <span>전체 가구 수</span>
+            <strong>1,248</strong>
           </div>
           <div>
-            <span>활동량</span>
-            <strong>98%</strong>
+            <span>Contact Floor 충족</span>
+            <strong>62%</strong>
           </div>
           <div>
-            <span>식사 이행률</span>
-            <strong>100%</strong>
+            <span>단절 가구</span>
+            <strong class="danger">38%</strong>
           </div>
           <div>
-            <span>대면 접촉</span>
-            <strong class="danger">0</strong>
+            <span>장기 미접촉</span>
+            <strong class="warning">231</strong>
           </div>
           <div>
-            <span>다음 방문 예정</span>
-            <strong class="danger">없음</strong>
+            <span>커뮤니티 이용률</span>
+            <strong class="danger">7%</strong>
           </div>
         </div>
         <div class="scroll-progress" aria-hidden="true"></div>
@@ -180,8 +195,8 @@
               <span>03</span>
               <h3>대응 방안</h3>
               <p>
-                공공 AI 돌봄에 접촉 최저선, 책임 로그, 관계 지표, 전환권, 제도적
-                감독을 의무화해 사람의 방문을 시스템 밖으로 밀어내지 않는다.
+                접촉 최저선, 책임 로그, 관계 지표, 전환권, 제도적 감독을 의무화해
+                사람의 방문을 시스템 밖으로 밀어내지 않는다.
               </p>
             </article>
           </div>
@@ -194,8 +209,8 @@
             <p class="eyebrow">root cause</p>
             <h2>문제는 기술의 부족이 아니라 돌봄을 측정한 방식이었다</h2>
             <p>
-              관제센터의 초록색 화면은 거짓말을 하지 않았다. 다만 우리가 측정하지
-              않기로 한 것들을 끝까지 보지 못했다.
+              타워의 조명은 꺼지지 않았다. 다만 우리가 측정하지 않기로 한 관계의
+              단절은 끝까지 보이지 않았다.
             </p>
           </div>
           <div class="diagnosis-stack">
@@ -340,9 +355,9 @@
             <p class="eyebrow">submission fit</p>
             <h2>공모전 제출물로서의 구조</h2>
             <p>
-              필수 제출물은 1페이지 PDF이고, 이 페이지는 보완 URL이다. 그래서
-              심사자가 처음 30초 안에 실패 장면을 이해하고, 이후 근거와 대응 방안을
-              확인할 수 있게 구성했다.
+              필수 제출물은 1페이지 PDF이고, 이 페이지는 보완 URL이다. 심사자가
+              처음 30초 안에 실패 장면을 이해하고, 이후 근거와 대응 방안을 확인할
+              수 있게 구성했다.
             </p>
           </div>
           <ul class="rubric-list">
@@ -360,7 +375,7 @@
             </li>
             <li>
               <strong>전달 및 표현력</strong>
-              <span>관제센터 디오라마와 실패 로그로 발표, 캠페인, 정책 제안으로 확장 가능</span>
+              <span>타워 디오라마와 접촉선 은유로 발표, 캠페인, 정책 제안으로 확장 가능</span>
             </li>
           </ul>
         </div>

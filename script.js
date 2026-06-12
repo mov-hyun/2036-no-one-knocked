@@ -17,24 +17,29 @@
 
   const logDetails = [
     {
-      title: "위험은 감지됐지만 방문은 밀렸다",
+      title: "Contact Floor",
       body:
-        "점수는 아직 임계값 아래였고, 대면 방문은 더 높은 점수의 가구로 재배정됐다. 시스템은 돌봄의 위험을 계산했지만 관계의 부재는 계산하지 않았다.",
+        "위험 점수와 무관하게 최소 대면 접촉선을 둔다. 월 1회 이상 대면 확인 또는 지역 관계망 확인을 공공 AI 돌봄의 기본 조건으로 만든다.",
     },
     {
-      title: "권고는 생성됐지만 책임자는 생기지 않았다",
+      title: "Accountability Log",
       body:
-        "모델은 방문 권고를 만들었고, 기관은 배정 대기열에 넣었고, 현장은 다음 순서를 기다렸다. 모든 단계는 기록됐지만 누구도 문 앞까지 가지 않았다.",
+        "모델 권고, 기관 배정, 현장 조치, 방문 생략 사유를 하나의 책임 로그로 남긴다. AI가 권고했다는 말이 책임의 끝이 되지 않게 한다.",
     },
     {
-      title: "현장의 부재가 데이터 완료로 바뀌었다",
+      title: "Relationship Metric",
       body:
-        "챗봇 응답, 복약 센서, 냉장고 개폐 기록은 모두 수집됐다. 대면 접촉이 없다는 사실은 위험 신호가 아니라 비용 절감의 결과로 처리됐다.",
+        "복약 성공률만 보지 않는다. 도움을 청할 수 있는 사람 수, 최근 대면 접촉, 정기 연락망, 지역 참여도를 핵심 성과 지표로 둔다.",
     },
     {
-      title: "뒤늦은 빨간불은 구조를 설명하지 못했다",
+      title: "Exit & Escalation",
       body:
-        "위험 점수가 급등했을 때 시스템은 응급 가능성을 표시했다. 그러나 왜 그 사람이 도움을 청할 관계망을 잃었는지는 설명하지 못했다.",
+        "당사자는 AI 돌봄 방식과 데이터 수집 범위를 거부하거나 대면 지원으로 전환할 수 있어야 한다. 사람이 와줬으면 한다는 요청이 시스템 안에 있어야 한다.",
+    },
+    {
+      title: "Institutional Oversight",
+      body:
+        "인간 감독은 담당자 한 명의 최종 클릭이 아니라, 기관이 AI 도입의 적절성, 지표 설계, 현장 영향, 이의제기 절차를 공개적으로 설명하고 검증받는 구조여야 한다.",
     },
   ];
 
@@ -46,7 +51,7 @@
     buttons.forEach((button) => {
       const isActive = Number(button.dataset.logIndex) === safeIndex;
       button.classList.toggle("is-active", isActive);
-      if (button.classList.contains("log-button")) {
+      if (button.classList.contains("principle-button")) {
         button.setAttribute("aria-pressed", String(isActive));
       }
     });
