@@ -1,9 +1,0 @@
-# Local contest source material
-(KAIST 실패연구소) 2026 AIx실패 아이디어 공모전 가이드북.pdf
-
-# Browser verification screenshots
-output/playwright/*.png
-
-# OS/editor noise
-.DS_Store
-Thumbs.db
