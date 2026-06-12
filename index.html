@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>정상 작동한 AI 돌봄의 실패 | 미래에서 온 오답노트</title>
+    <meta
+      name="description"
+      content="2026 KAIST AI x 실패 아이디어 공모전 보완 자료. AI 돌봄이 사회적 연결을 KPI 밖으로 밀어낸 2036년 프리모템."
+    />
+    <meta property="og:title" content="정상 작동한 AI 돌봄의 실패" />
+    <meta
+      property="og:description"
+      content="2036년, 대시보드는 파란색이었고 아무도 문을 두드리지 않았다."
+    />
+    <meta property="og:image" content="assets/hero-care-dashboard.png" />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+    <header class="site-header" aria-label="상단 메뉴">
+      <a class="brand" href="#top" aria-label="미래에서 온 오답노트 홈">
+        <span class="brand-mark" aria-hidden="true">2036</span>
+        <span>오답노트</span>
+      </a>
+      <nav class="nav" aria-label="주요 섹션">
+        <a href="#failure">실패 장면</a>
+        <a href="#signals">원인 진단</a>
+        <a href="#response">대응 방안</a>
+        <a href="#evidence">근거</a>
+        <a href="proposal.html">제안서</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero" aria-label="AI 돌봄 실패 프리모템">
+        <img
+          class="hero-image"
+          src="assets/hero-care-dashboard.png"
+          alt="노인이 저녁 무렵 집 안에서 AI 돌봄 대시보드를 바라보는 장면"
+        />
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">2026 KAIST AI x 실패 아이디어 공모전</p>
+          <h1>정상 작동한 AI 돌봄의 실패</h1>
+          <p class="hero-copy">
+            2036년, 공공 AI 돌봄망은 복약, 수면, 낙상, 심박, 냉장고 사용량을
+            정확히 관리했다. 대시보드는 파란색이었다. 문제는 AI가 놓친 것이 아니라,
+            우리가 돌봄의 목표에서 사람의 방문과 관계망을 지워버린 데 있었다.
+          </p>
+          <div class="hero-actions" aria-label="주요 행동">
+            <a class="button primary" href="#failure">오답노트 읽기</a>
+            <a class="button secondary" href="proposal.html">1페이지 제안서</a>
+          </div>
+          <dl class="hero-meta" aria-label="공모전 제출 정보">
+            <div>
+              <dt>핵심 실패</dt>
+              <dd>AI 오작동이 아닌 KPI 오설계</dd>
+            </div>
+            <div>
+              <dt>보완 자료</dt>
+              <dd>GitHub Pages 링크</dd>
+            </div>
+            <div>
+              <dt>마감</dt>
+              <dd><span data-deadline-label>2026.07.17 23:59</span></dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="summary-band" aria-label="3단계 요약">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">3-line premortem</p>
+            <h2>미래에서 도착한 세 줄 요약</h2>
+          </div>
+          <div class="summary-grid">
+            <article class="summary-card">
+              <span class="step">01</span>
+              <h3>예견된 실패</h3>
+              <p>
+                2036년 AI 돌봄 시스템은 건강 위험을 낮췄지만 관계 위험을 키웠다.
+                시스템은 매일 "정상"을 보고했고, 사람들은 점점 더 늦게 도착했다.
+              </p>
+            </article>
+            <article class="summary-card">
+              <span class="step">02</span>
+              <h3>원인 진단</h3>
+              <p>
+                2026년 우리는 돌봄의 성공을 관계 회복이 아니라 처리 건수, 비용
+                절감, 위험 점수 하락으로 측정하기 시작했다. AI는 그 목표를 충실히
+                최적화했다.
+              </p>
+            </article>
+            <article class="summary-card">
+              <span class="step">03</span>
+              <h3>대응 방안</h3>
+              <p>
+                AI 돌봄을 고위험 공공 서비스 인프라로 보고, 접촉 최저선, 책임 로그,
+                관계 지표, 당사자 전환권, 제도적 감독을 의무화한다.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="failure" class="story-section">
+        <div class="section-inner split">
+          <div class="section-heading sticky-heading">
+            <p class="eyebrow">failure scene</p>
+            <h2>2036년 11월 18일, 서울의 한 공공임대주택</h2>
+            <p>
+              이 실패는 큰 폭발음이 없었다. 모두가 맡은 일을 했고, 그래서 더 오래
+              발견되지 않았다.
+            </p>
+          </div>
+          <div class="log-list" aria-label="2036년 실패 로그">
+            <article class="log-item">
+              <time datetime="2036-11-18T07:10">07:10</time>
+              <div>
+                <h3>대시보드는 파란색이었다</h3>
+                <p>
+                  수면, 복약, 냉장고 개폐, 심박은 모두 정상 범위였다. 담당자의 화면에는
+                  "방문 불필요"가 표시됐다.
+                </p>
+              </div>
+            </article>
+            <article class="log-item">
+              <time datetime="2036-11-18T14:30">14:30</time>
+              <div>
+                <h3>챗봇은 응답 완료를 기록했다</h3>
+                <p>
+                  "오늘 기분은 어떠세요?"라는 질문에 사용자는 "괜찮아요"를 눌렀다.
+                  말하고 싶지 않은 사람의 침묵은 위험 신호가 아니라 데이터 완료율이 됐다.
+                </p>
+              </div>
+            </article>
+            <article class="log-item">
+              <time datetime="2036-11-18T21:05">21:05</time>
+              <div>
+                <h3>아무도 문을 두드리지 않았다</h3>
+                <p>
+                  위험 점수가 낮다는 이유로 생활지원사는 더 높은 점수의 가구로 이동했다.
+                  이웃 돌봄 모임은 이미 해산됐다. AI는 위험을 낮췄고 관계도 낮췄다.
+                </p>
+              </div>
+            </article>
+            <article class="log-item alert">
+              <time datetime="2036-11-19T09:40">다음 날</time>
+              <div>
+                <h3>실패는 사고가 아니라 설계였다</h3>
+                <p>
+                  기업은 모델 권고라고, 기관은 배정 기준이라고, 현장은 시스템 지시라고
+                  말했다. 누구도 "이 사람이 도움을 청할 수 있는 사람이 남아 있는가"를
+                  책임지지 않았다.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="signals" class="cause-section">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">missed signals</p>
+            <h2>우리가 놓친 2026년의 작은 신호</h2>
+          </div>
+          <div class="cause-track" aria-label="원인 진단 타임라인">
+            <article>
+              <span>2026</span>
+              <h3>성과 지표가 바뀌었다</h3>
+              <p>
+                돌봄 AI는 "방문 대체"가 아니라 "위험 선별"이라고 설명됐다. 그러나
+                예산표에서는 사람의 방문 시간이 가장 먼저 줄었다.
+              </p>
+            </article>
+            <article>
+              <span>2029</span>
+              <h3>관계가 데이터 밖으로 밀렸다</h3>
+              <p>
+                생체 신호와 활동량은 핵심 지표가 됐고, 느린 대화와 이웃의 관찰은
+                주관적이라는 이유로 보조 자료가 됐다.
+              </p>
+            </article>
+            <article>
+              <span>2032</span>
+              <h3>위험 점수가 판단을 재구성했다</h3>
+              <p>
+                담당자는 관계 회복보다 위험 감소에 더 민감해졌다. 낮은 점수는
+                방문을 미뤄도 된다는 행정적 안도감을 만들었다.
+              </p>
+            </article>
+            <article>
+              <span>2036</span>
+              <h3>고립은 정상값이 됐다</h3>
+              <p>
+                사람을 덜 만나는 삶이 표준이 되자 AI는 외로움을 이상 징후가 아니라
+                일상 패턴으로 학습했다.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="response" class="response-section">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">response plan</p>
+            <h2>지금 바꿔야 할 CARE+ 원칙</h2>
+          </div>
+          <div class="response-grid">
+            <article class="response-item">
+              <span aria-hidden="true">C</span>
+              <h3>Contact Floor</h3>
+              <p>
+                위험 점수와 무관한 인간 접촉 최저선을 둔다. 월 1회 이상 대면 확인
+                또는 지역 관계망 확인을 공공 AI 돌봄의 기본 조건으로 만든다.
+              </p>
+            </article>
+            <article class="response-item">
+              <span aria-hidden="true">A</span>
+              <h3>Accountability Log</h3>
+              <p>
+                모델 권고, 기관 배정, 현장 조치, 방문 생략 사유를 하나의 책임 로그로
+                남긴다. "AI가 권고했다"는 말이 책임의 끝이 되지 않게 한다.
+              </p>
+            </article>
+            <article class="response-item">
+              <span aria-hidden="true">R</span>
+              <h3>Relationship Metric</h3>
+              <p>
+                복약 성공률만 보지 않는다. 도움을 청할 수 있는 사람 수, 최근 대면
+                접촉, 정기 연락망, 지역 참여도를 핵심 성과 지표로 둔다.
+              </p>
+            </article>
+            <article class="response-item">
+              <span aria-hidden="true">E</span>
+              <h3>Exit & Escalation</h3>
+              <p>
+                당사자는 AI 돌봄 방식과 데이터 수집 범위를 거부하거나 대면 지원으로
+                전환할 수 있어야 한다. "사람이 와줬으면 한다"는 버튼이 필요하다.
+              </p>
+            </article>
+          </div>
+          <article class="oversight-callout">
+            <p class="eyebrow">plus</p>
+            <h3>Institutional Oversight</h3>
+            <p>
+              인간 감독은 담당자 한 명의 최종 클릭이 아니라, 기관이 AI 도입의 적절성,
+              지표 설계, 현장 영향, 이의제기 절차를 공개적으로 설명하고 검증받는
+              구조여야 한다.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="evidence" class="evidence-section" aria-label="근거 자료">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">evidence base</p>
+            <h2>왜 이 실패가 현실적인가</h2>
+            <p>
+              이 아이디어는 AI 공포물이 아니라 사회적 연결, 공공 서비스 AI, 인간 감독
+              연구를 연결한 프리모템이다.
+            </p>
+          </div>
+          <div class="evidence-grid">
+            <article class="evidence-card">
+              <h3>사회적 연결은 건강 인프라다</h3>
+              <p>
+                U.S. Surgeon General은 사회적 연결을 개인 건강과 공동체 회복력의
+                핵심 요인으로 보고, 고립과 외로움을 공중보건 문제로 다룬다.
+              </p>
+              <a href="https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf">Surgeon General Advisory</a>
+            </article>
+            <article class="evidence-card">
+              <h3>고립은 사망 위험과 연결된다</h3>
+              <p>
+                Holt-Lunstad 등의 메타분석은 사회적 고립, 외로움, 독거가 조기 사망
+                위험과 연관됨을 보고했다.
+              </p>
+              <a href="https://doi.org/10.1177/1745691614568352">Holt-Lunstad et al. 2015</a>
+            </article>
+            <article class="evidence-card">
+              <h3>공공 서비스 AI는 고위험이다</h3>
+              <p>
+                EU AI Act는 공공 서비스의 자격 평가, 배분, 감액, 철회에 쓰이는 AI를
+                고위험 영역으로 다룬다.
+              </p>
+              <a href="https://artificialintelligenceact.eu/high-level-summary/">EU AI Act Summary</a>
+            </article>
+            <article class="evidence-card">
+              <h3>위험 점수는 판단을 바꾼다</h3>
+              <p>
+                공공 의사결정 실험은 알고리즘 위험평가가 사람의 정책 판단을 더 위험
+                회피적으로 바꿀 수 있음을 보여준다.
+              </p>
+              <a href="https://arxiv.org/abs/2012.05370">Green & Chen</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="rubric-section" aria-label="심사 기준 대응">
+        <div class="section-inner rubric-layout">
+          <div>
+            <p class="eyebrow">submission fit</p>
+            <h2>심사 기준에 맞춘 설계</h2>
+            <p>
+              본 페이지는 보완 자료이며, 실제 심사는 1페이지 제안서를 중심으로
+              진행된다. 그래서 공개 페이지도 제안서의 세 요소를 확장해 보여주는
+              방식으로 구성했다.
+            </p>
+          </div>
+          <ul class="rubric-list">
+            <li>
+              <strong>통찰력 및 참신성</strong>
+              <span>AI가 틀린 미래가 아니라 AI가 지표를 너무 잘 따른 미래를 실패로 정의</span>
+            </li>
+            <li>
+              <strong>논리적 인과성</strong>
+              <span>2026년 지표 설계에서 2036년 고립 표준화까지 역추적</span>
+            </li>
+            <li>
+              <strong>현재적 가치 및 실행력</strong>
+              <span>접촉 최저선, 책임 로그, 관계 지표, 전환권, 제도적 감독 제안</span>
+            </li>
+            <li>
+              <strong>전달 및 표현력</strong>
+              <span>시간대별 로그와 CARE+ 원칙으로 발표와 캠페인 확장 가능</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="cta-section" aria-label="제출 준비">
+        <div class="section-inner cta-inner">
+          <div>
+            <p class="eyebrow">ready to submit</p>
+            <h2>제출용 PDF와 보완 링크를 함께 준비한다</h2>
+          </div>
+          <div class="cta-actions">
+            <a class="button primary" href="proposal.html">제안서 열기</a>
+            <a class="button secondary" href="#top">처음으로</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        2026 KAIST AI x 실패 아이디어 공모전 보완 자료. 모든 문구와 이미지는 본
+        제출을 위한 창작물입니다.
+      </p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
