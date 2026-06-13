@@ -749,9 +749,11 @@ body.is-healed .knock-btn small { color: rgba(90, 255, 208, 0.7); }
   border-radius: 12px;
   background: var(--panel-strong);
 }
-.footer-fit ul { margin: 0; padding: 0 0 0 18px; display: grid; gap: 9px; }
+.footer-fit ul,
+.footer-fit ol { margin: 0; padding: 0 0 0 18px; display: grid; gap: 9px; }
 .footer-fit li { font-size: 0.86rem; color: var(--ink-dim); line-height: 1.66; }
 .footer-fit strong { color: var(--ink); }
+.summary-fit { max-width: 860px; }
 .reference-panel {
   max-width: 900px;
   margin: 0 auto 28px;
