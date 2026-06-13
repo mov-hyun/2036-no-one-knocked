@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2036, No One Knocked — 체험형 프리모템 드라마</title>
+    <meta
+      name="description"
+      content="KAIST 실패연구소 2026 AIx실패 아이디어 공모전 보완 자료. 2036년, 모든 지표가 정상인 동안 사람의 방문이 사라진 AI 돌봄 실패를 디오라마 속에서 직접 걸어 들어가 읽는 체험형 프리모템."
+    />
+    <meta property="og:title" content="2036, No One Knocked" />
+    <meta
+      property="og:description"
+      content="모든 시스템은 정상으로 판정했다. 하지만 아무도 문을 두드리지 않았다."
+    />
+    <meta property="og:image" content="assets/contact-floor-tower-cyberpunk.png" />
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;900&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="experience.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#ch1">본문으로 건너뛰기</a>
+
+    <!-- ============ 고정 무대: 디오라마 카메라 ============ -->
+    <div class="stage" aria-hidden="true">
+      <div class="stage-art" data-camera>
+        <div class="drift">
+          <img
+            src="assets/contact-floor-tower-cyberpunk.png"
+            alt=""
+            draggable="false"
+          />
+          <span class="window-flicker"></span>
+          <span class="heal-line" data-heal-line></span>
+          <span class="knock-ripple" data-knock-ripple></span>
+        </div>
+      </div>
+      <div class="fog fog-a"></div>
+      <div class="fog fog-b"></div>
+      <canvas class="rain" data-rain></canvas>
+      <div class="lightning" data-lightning></div>
+      <div class="grade" data-grade></div>
+      <div class="grain"></div>
+      <div class="scanlines"></div>
+      <div class="vignette"></div>
+    </div>
+
+    <!-- ============ 고정 HUD: 시스템은 늘 정상이라고 말한다 ============ -->
+    <aside class="hud" data-hud aria-label="2036년 케어 그리드 시스템 상태">
+      <p class="hud-title">
+        <span class="hud-dot" data-hud-dot></span>
+        SEOUL CARE GRID <em>v9.4</em>
+      </p>
+      <p class="hud-clock mono" data-hud-clock>2036-03-14 04:12:07 KST</p>
+      <ul class="hud-lines">
+        <li><span>위험 점수</span><strong data-hud="risk">0.12 ▼</strong></li>
+        <li><span>생체 지표</span><strong data-hud="vitals">4/4 정상</strong></li>
+        <li><span>예산 효율</span><strong data-hud="budget">+18.4%</strong></li>
+        <li class="hud-contact" data-hud-contact hidden>
+          <span>대면 접촉</span><strong data-hud="contact">측정 안 함</strong>
+        </li>
+      </ul>
+      <p class="hud-stamp" data-hud-stamp>이상 없음 · NO ANOMALY</p>
+    </aside>
+
+    <!-- ============ 장 이동 레일 ============ -->
+    <nav class="rail" aria-label="장 이동">
+      <a href="#ch0" data-rail="ch0"><i></i><span>서막</span></a>
+      <a href="#ch1" data-rail="ch1"><i></i><span>제1장 · 도시</span></a>
+      <a href="#ch2" data-rail="ch2"><i></i><span>제2장 · 시스템의 눈</span></a>
+      <a href="#ch3" data-rail="ch3"><i></i><span>제3장 · 305호</span></a>
+      <a href="#ch4" data-rail="ch4"><i></i><span>제4장 · 접촉 기록부</span></a>
+      <a href="#ch5" data-rail="ch5"><i></i><span>제5장 · 사전 부검</span></a>
+      <a href="#ch6" data-rail="ch6"><i></i><span>제6장 · 역추적</span></a>
+      <a href="#ch7" data-rail="ch7"><i></i><span>제7장 · CARE+</span></a>
+      <a href="#ch8" data-rail="ch8"><i></i><span>제8장 · 데이터</span></a>
+      <a href="#ch9" data-rail="ch9"><i></i><span>종막 · 2026</span></a>
+    </nav>
+
+    <main id="main">
+      <!-- ============ 서막 ============ -->
+      <section class="scene scene-prologue" id="ch0" data-scene="ch0">
+        <div class="prologue-box">
+          <pre class="boot" data-boot aria-label="2036년 시스템 감사 기록"></pre>
+          <p class="prologue-line" data-prologue-line>
+            그날 새벽까지, 시스템은 단 한 번도 거짓말을 하지 않았다.
+          </p>
+          <p class="scroll-cue" data-scroll-cue>
+            <span>아래로 내려 디오라마에 들어갑니다</span>
+            <i aria-hidden="true">▾</i>
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ 제1장 · 도시 ============ -->
+      <section class="scene scene-city" id="ch1" data-scene="ch1">
+        <div class="panel panel-title">
+          <p class="chapter">제1장 · 도시</p>
+          <p class="year-mark">2036</p>
+          <h1 class="glitch" data-text="No One Knocked">No One Knocked</h1>
+          <p class="lede serif">
+            비는 내리고, 모든 방의 불은 켜져 있다.
+            AI는 위험 점수를 낮췄고, 예산은 절감됐고, 대시보드는 한 번도 흔들리지
+            않았다. <strong>그러나 사람이 문을 두드리는 가장 낮은 선은,
+            아무 경보도 없이 끊어졌다.</strong>
+          </p>
+          <div class="seed-strip mono" aria-label="이 미래의 씨앗이 된 2026년의 통계">
+            <span>이 미래의 씨앗은 이미 통계표에 있다</span>
+            <em>1인 가구 35.5% · 고독사 연 3,661명 · 2036년 노인 비중 30% 전망</em>
+          </div>
+          <p class="hint">화면 우측 하단의 시스템 패널을 계속 지켜봐 주세요. 이야기가 끝날 때까지, 저 패널은 줄곧 「정상」이라고 말합니다.</p>
+        </div>
+      </section>
+
+      <!-- ============ 제2장 · 시스템의 눈 ============ -->
+      <section class="scene scene-monitor" id="ch2" data-scene="ch2">
+        <div class="panel panel-left">
+          <p class="chapter">제2장 · 시스템의 눈</p>
+          <h2>이 건물에서, 보이지 않는 것은 없었다</h2>
+          <p class="serif">
+            4층 관제 모듈은 1,248가구의 심박, 수면, 복약, 냉장고 개폐, 보행
+            속도를 초 단위로 읽는다. 데이터가 부족해서 생긴 비극이 아니다.
+            <strong>이 이야기는 세상에서 가장 많이 관찰된 사람들에 관한
+            이야기다.</strong>
+          </p>
+          <ul class="live-metrics" aria-label="305호 실시간 감지 지표">
+            <li><span>심박</span><strong><b data-tick="hr">62</b> bpm</strong><em>정상</em></li>
+            <li><span>수면</span><strong><b data-tick="sleep">7.2</b> h</strong><em>정상</em></li>
+            <li><span>복약 순응도</span><strong><b data-tick="med">100</b>%</strong><em>정상</em></li>
+            <li><span>금일 보행</span><strong><b data-tick="steps">1,847</b> 걸음</strong><em>정상</em></li>
+          </ul>
+          <p class="metric-note mono">SENSOR UPTIME 99.98% · 결측 없음</p>
+        </div>
+      </section>
+
+      <!-- ============ 제3장 · 305호 ============ -->
+      <section class="scene scene-room" id="ch3" data-scene="ch3">
+        <div class="panel panel-right">
+          <p class="chapter">제3장 · 305호</p>
+          <h2>의자는 그대로였다</h2>
+          <p class="serif">
+            305호의 모든 수치는 살아 있다. 심장은 뛰고, 약은 제때 삼켜지고,
+            냉장고는 하루 네 번 열린다. 다만 손님용 의자에는
+            먼지가 앉아 있고, 현관 카메라의 마지막 「사람」 기록은
+            점점 오래된 과거가 된다.
+          </p>
+          <div class="big-counter" aria-label="마지막 방문 이후 경과일">
+            <p class="big-counter-label">마지막 노크로부터</p>
+            <p class="big-counter-value"><b data-days>0</b><span>일</span></p>
+            <p class="big-counter-sub mono">LAST HUMAN VISIT · 2035-01-27</p>
+          </div>
+          <p class="serif quiet">
+            시스템 입장에서 이것은 사건이 아니다. 측정하지 않는 값은,
+            사라져도 경보가 울리지 않는다. 2026년에도 혼자 사는 고령자
+            다섯 중 한 명은 「도움받을 사람이 없다」고 답하고 있었다.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ 제4장 · 접촉 기록부 ============ -->
+      <section class="scene scene-log" id="ch4" data-scene="ch4">
+        <div class="panel panel-wide">
+          <p class="chapter">제4장 · 접촉 기록부</p>
+          <div class="doc-head">
+            <h2>끊어진 것은 한순간이 아니었다</h2>
+            <p class="doc-stamp mono">REPORT KR-2036-0314 · 대외비</p>
+          </div>
+          <p class="serif">
+            305호의 접촉 기록부를 시간순으로 읽는다. 기계의 기록은 촘촘해지고,
+            사람의 기록은 성글어진다. <strong>어느 줄에서 선이 끊어졌는지,
+            직접 찾아보라.</strong>
+          </p>
+          <ol class="contact-log" data-log-list aria-label="305호 접촉 기록부">
+            <li class="log-human"><span class="log-date">2032.04.02</span><span class="log-who">생활지원사 방문</span><span class="log-note">말벗 40분 · 혈압 측정</span></li>
+            <li class="log-ai"><span class="log-date">2032.04.02</span><span class="log-who">CARE GRID</span><span class="log-note">방문 결과 입력 · 위험도 갱신</span></li>
+            <li class="log-human"><span class="log-date">2032.09.15</span><span class="log-who">이웃 김OO 방문</span><span class="log-note">반찬 전달 · 30분 대화</span></li>
+            <li class="log-ai"><span class="log-date">2033.02.01</span><span class="log-who">CARE GRID v7.0</span><span class="log-note">예측 모델 도입 · 「저위험군 방문 주기 조정 권고」</span></li>
+            <li class="log-human"><span class="log-date">2033.06.20</span><span class="log-who">생활지원사 방문</span><span class="log-note">분기 정기 확인 · 15분</span></li>
+            <li class="log-ai"><span class="log-date">2034.01.10</span><span class="log-who">CARE GRID</span><span class="log-note">챗봇 안부 응답 「괜찮아요」 버튼 수신</span></li>
+            <li class="log-ai"><span class="log-date">2034.03.18</span><span class="log-who">행정 시스템</span><span class="log-note">저위험군 대면 확인 → 원격 확인 대체 승인</span></li>
+            <li class="log-human log-faded"><span class="log-date">2035.01.27</span><span class="log-who">검침원 방문</span><span class="log-note">현관 앞 2분 · 마지막 대면 기록</span></li>
+            <li class="log-ai"><span class="log-date">2035.08.30</span><span class="log-who">CARE GRID v9.0</span><span class="log-note">고립 패턴을 「개인 일상 패턴」으로 재분류</span></li>
+            <li class="log-ai"><span class="log-date">2036.03.13</span><span class="log-who">CARE GRID</span><span class="log-note">야간 정기 보고 · 전 지표 정상</span></li>
+            <li class="log-break"><span class="log-date">2036.03.14</span><span class="log-who">—</span><span class="log-note">방문 기록 없음 · 412일째 · 경보 없음</span></li>
+          </ol>
+          <p class="alarm-strip mono" aria-hidden="true">⚠ UNLOGGED DISCONNECTION — 이 단절은 어떤 시스템에도 「오류」로 기록되지 않았다 ⚠</p>
+        </div>
+      </section>
+
+      <!-- ============ 제5장 · 사전 부검 보고서 ============ -->
+      <section class="scene scene-doc" id="ch5" data-scene="ch5">
+        <div class="panel panel-doc">
+          <p class="chapter">제5장 · 사전 부검 보고서</p>
+          <div class="doc-head">
+            <h2>Pre-Mortem Report</h2>
+            <p class="doc-stamp mono">작성 시점: 2026년 — 사건 발생 10년 전</p>
+          </div>
+          <p class="serif">
+            이것은 2036년의 사고 보고서를 2026년에 미리 쓰는 문서다.
+            이 실패의 무서움은 AI가 틀렸다는 데 있지 않다.
+            <strong>AI는 우리가 준 목표를 너무 잘 수행했고, 측정되지 않는
+            인간적 돌봄은 조용히 지워졌다.</strong>
+          </p>
+          <div class="doc-grid">
+            <article>
+              <p class="doc-no mono">FINDING 01</p>
+              <h3>예견된 실패</h3>
+              <p>
+                2036년 공공 AI 돌봄망은 복약·수면·활동량을 안정적으로
+                관리했지만, 고립 위험을 낮추지 못했다. 대시보드는 정상이었고,
+                문 앞은 비어 있었다. 실패는 오작동이 아니라
+                「정상 작동」의 형태로 도착했다.
+              </p>
+            </article>
+            <article>
+              <p class="doc-no mono">FINDING 02</p>
+              <h3>원인 진단</h3>
+              <p>
+                2026년, 우리는 돌봄의 성공을 관계 회복이 아니라 처리 건수,
+                비용 절감, 위험 점수 하락으로 측정하기 시작했다. 잘못된 KPI는
+                그대로 10년 치 예산표가 되었고, 사람의 방문 시간이 가장 먼저
+                지워졌다.
+              </p>
+            </article>
+            <article>
+              <p class="doc-no mono">FINDING 03</p>
+              <h3>대응 방안</h3>
+              <p>
+                접촉 최저선(Contact Floor), 책임 로그, 관계 지표, 전환권,
+                제도적 감독을 공공 AI 돌봄의 기본값으로 의무화한다.
+                기술을 금지하는 제안이 아니라, 시스템의 기본 설계를
+                다시 쓰는 제안이다.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 제6장 · 역추적 ============ -->
+      <section class="scene scene-doc" id="ch6" data-scene="ch6">
+        <div class="panel panel-doc">
+          <p class="chapter">제6장 · 역추적</p>
+          <h2>신호는 항상 있었다</h2>
+          <p class="serif">
+            2036년에서 2026년으로 거슬러 올라간다. 어느 한 해의 큰 결정이
+            아니라, 매년의 작고 합리적인 선택들이 선을 끊었다.
+          </p>
+          <ol class="trace">
+            <li>
+              <p class="trace-year mono">2036</p>
+              <h3>Normalised Isolation</h3>
+              <p>사람을 덜 만나는 삶이 표준이 되자, AI는 고립을 이상 징후가 아니라 개인의 일상 패턴으로 학습했다.</p>
+            </li>
+            <li>
+              <p class="trace-year mono">2032</p>
+              <h3>Automation Framing</h3>
+              <p>낮은 위험 점수는 현장 담당자에게 「방문을 미뤄도 된다」는 행정적 안도감을 만들었다. 책임은 점수 뒤로 숨었다.</p>
+            </li>
+            <li>
+              <p class="trace-year mono">2029</p>
+              <h3>Proxy Metric Trap</h3>
+              <p>생체 신호와 활동량은 핵심 지표가 됐고, 느린 대화와 이웃의 관찰은 「주관적 자료」로 밀려나 결재선에서 사라졌다.</p>
+            </li>
+            <li>
+              <p class="trace-year mono now">2026</p>
+              <h3>Efficiency Over Care — 지금, 여기</h3>
+              <p>AI 도입의 명분은 위험 선별이었지만, 예산과 인력 배정표에서 가장 먼저 줄어든 것은 사람의 방문 시간이었다. <strong>이 줄이 이 드라마의 1화다.</strong></p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ 제7장 · CARE+ ============ -->
+      <section class="scene scene-care" id="ch7" data-scene="ch7">
+        <div class="panel panel-doc">
+          <p class="chapter">제7장 · CARE+ Protocol</p>
+          <h2>같은 건물, 다른 설계</h2>
+          <p class="serif">
+            결론은 「AI 돌봄을 멈추자」가 아니다. <strong>AI 돌봄을 공공
+            시스템답게 다시 설계하자</strong>는 것이다. 아래 다섯 원칙을
+            하나씩 눌러보라. 시스템 패널에 빠져 있던 지표가 켜진다.
+          </p>
+          <div class="care-grid">
+            <div class="care-list" role="tablist" aria-label="CARE+ 다섯 원칙">
+              <button class="care-btn is-active" type="button" data-care="0" role="tab" aria-selected="true"><span>C</span><strong>Contact Floor</strong><small>위험 점수와 무관한 최소 대면 접촉선</small></button>
+              <button class="care-btn" type="button" data-care="1" role="tab" aria-selected="false"><span>A</span><strong>Accountability Log</strong><small>AI 권고부터 방문 생략 사유까지 하나의 책임 기록</small></button>
+              <button class="care-btn" type="button" data-care="2" role="tab" aria-selected="false"><span>R</span><strong>Relationship Metric</strong><small>관계망을 핵심 성과 지표로 측정</small></button>
+              <button class="care-btn" type="button" data-care="3" role="tab" aria-selected="false"><span>E</span><strong>Exit &amp; Escalation</strong><small>당사자가 사람의 도움으로 전환할 권리</small></button>
+              <button class="care-btn" type="button" data-care="4" role="tab" aria-selected="false"><span>+</span><strong>Institutional Oversight</strong><small>담당자 한 명의 클릭이 아닌 기관의 설명 책임</small></button>
+            </div>
+            <div class="care-detail" data-care-detail aria-live="polite">
+              <h3 data-care-title>Contact Floor</h3>
+              <p data-care-body>
+                위험 점수와 무관하게 최소 대면 접촉선을 둔다. 월 1회 이상 대면
+                확인 또는 지역 관계망 확인을 공공 AI 돌봄의 기본 조건으로
+                만든다. 점수가 아무리 낮아도, 이 선 아래로는 내려가지 않는다.
+              </p>
+              <p class="care-impl mono" data-care-impl>실행 주체: 보건복지부·지자체 — 공공 돌봄 위탁 계약의 표준 조항으로 5년 내 의무화</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 제8장 · 데이터 ============ -->
+      <section class="scene scene-doc" id="ch8" data-scene="ch8">
+        <div class="panel panel-doc">
+          <p class="chapter">제8장 · 데이터</p>
+          <h2>이 디스토피아는 숫자에서 시작한다</h2>
+          <p class="serif">
+            공포의 근거는 기계의 반란이 아니다. 아래 숫자는 전부
+            2026년 현재 정부 통계와 동료심사 연구로 확인된 값이다.
+          </p>
+          <div class="stat-wall">
+            <a class="stat" href="https://www.mohw.go.kr/board.es?act=view&amp;bid=0027&amp;list_no=1483372&amp;mid=a10503010100" target="_blank" rel="noopener">
+              <strong><b data-stat="3661">0</b><i>명</i></strong>
+              <span>2023년 한국 고독사 사망자 — 5년 연속 증가</span>
+              <small class="mono">보건복지부 · 2024 고독사 실태조사</small>
+            </a>
+            <a class="stat" href="https://kostat.go.kr/board.es?mid=a10301010000&amp;bid=10820&amp;act=view&amp;list_no=434103" target="_blank" rel="noopener">
+              <strong><b data-stat="35.5" data-decimal="1">0</b><i>%</i></strong>
+              <span>1인 가구 비중 — 통계 작성 이래 역대 최대</span>
+              <small class="mono">통계청 · 2024 통계로 보는 1인가구</small>
+            </a>
+            <a class="stat" href="https://kostat.go.kr/board.es?mid=a10301010000&amp;bid=10820&amp;act=view&amp;list_no=432917" target="_blank" rel="noopener">
+              <strong><b data-stat="18.7" data-decimal="1">0</b><i>%</i></strong>
+              <span>혼자 사는 고령자 중 「도움받을 사람이 없다」</span>
+              <small class="mono">통계청 · 2024 고령자통계</small>
+            </a>
+            <a class="stat stat-red" href="https://kostat.go.kr/board.es?mid=a10301010000&amp;bid=10820&amp;act=view&amp;list_no=432917" target="_blank" rel="noopener">
+              <strong><b data-stat="30">0</b><i>%</i></strong>
+              <span>2036년 고령인구 비중 전망 — 이 작품의 무대</span>
+              <small class="mono">통계청 · 장래인구추계</small>
+            </a>
+            <a class="stat" href="https://doi.org/10.1177/1745691614568352" target="_blank" rel="noopener">
+              <strong>+<b data-stat="29">0</b><i>%</i></strong>
+              <span>사회적 고립이 높이는 조기 사망 위험<br />(외로움 +26% · 독거 +32%)</span>
+              <small class="mono">Holt-Lunstad et al. · 메타분석 70편</small>
+            </a>
+            <a class="stat" href="https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf" target="_blank" rel="noopener">
+              <strong><b data-stat="15">0</b><i>개비</i></strong>
+              <span>사회적 단절의 건강 피해 ≈ 하루 흡연량 환산</span>
+              <small class="mono">U.S. Surgeon General · 2023 권고</small>
+            </a>
+          </div>
+          <div class="evidence-row">
+            <a class="evidence-chip mono" href="https://artificialintelligenceact.eu/high-level-summary/" target="_blank" rel="noopener">EU AI Act — 공공 서비스 AI를 고위험으로 분류 ↗</a>
+            <a class="evidence-chip mono" href="https://arxiv.org/abs/2012.05370" target="_blank" rel="noopener">Green &amp; Chen — 위험 점수가 사람의 판단을 바꾼다 ↗</a>
+            <a class="evidence-chip mono" href="https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf" target="_blank" rel="noopener">Surgeon General — 고립은 공중보건 위기 ↗</a>
+          </div>
+          <p class="stat-note">
+            돌봄의 효율은 올라가는데 고독사는 늘고, 도움 청할 사람이 없는 노인이
+            다섯 중 한 명이라면 — 우리가 측정하는 「성공」의 정의가 틀린 것이다.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ 종막 · 2026 ============ -->
+      <section class="scene scene-finale" id="ch9" data-scene="ch9">
+        <div class="panel panel-title">
+          <p class="chapter">종막</p>
+          <p class="year-mark turn">2026</p>
+          <h2 class="finale-title">지금은 아직, 두드릴 수 있다</h2>
+          <p class="lede serif">
+            2036년의 보고서는 아직 쓰이지 않았다. 잘못된 KPI를 고치고,
+            관계를 측정하고, 책임을 기록하는 일은 전부 오늘 시작할 수 있다.
+          </p>
+          <button class="knock-btn" type="button" data-knock>
+            <span class="knock-ring" aria-hidden="true"></span>
+            <strong>문을 두드리기</strong>
+            <small>KNOCK</small>
+          </button>
+          <p class="knock-result" data-knock-result hidden>
+            접촉선이 다시 이어졌습니다. 한 번의 노크가 기준선이 됩니다.
+          </p>
+          <div class="finale-actions">
+            <a class="button primary" href="proposal.html">1페이지 제안서 보기</a>
+            <a class="button secondary" href="https://github.com/mov-hyun/2036-no-one-knocked" target="_blank" rel="noopener">GitHub 저장소</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="footer-fit">
+          <p class="chapter">공모전 제출물로서의 구조</p>
+          <ul>
+            <li><strong>통찰력·참신성</strong> — AI가 틀린 미래가 아니라, AI가 지표를 너무 잘 따른 미래를 실패로 정의</li>
+            <li><strong>논리적 인과성</strong> — 2026년의 지표 설계에서 2036년의 고립 표준화까지 장(章) 단위로 역추적</li>
+            <li><strong>현재적 가치·실행력</strong> — 접촉 최저선·책임 로그·관계 지표·전환권·제도적 감독을 5년 내 실행안으로 제시</li>
+            <li><strong>전달·표현력</strong> — 타워 디오라마와 「끊어진 접촉선」 은유를 체험형 드라마로 구현</li>
+          </ul>
+        </div>
+        <p class="footer-note">
+          2026 KAIST AIx실패 아이디어 공모전 보완 자료 · 본 페이지의 모든 문구, 인물, 기록은 제출을 위한 창작물입니다.
+          심사는 1페이지 제안서 중심으로 진행되며, 이 페이지는 보완 URL입니다.
+        </p>
+      </footer>
+    </main>
+
+    <script src="experience.js" defer></script>
+  </body>
+</html>
