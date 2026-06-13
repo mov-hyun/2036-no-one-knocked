@@ -85,11 +85,21 @@ AI 권고, 기관 배정, 현장 조치, 방문 생략 사유를 하나의 책�
 
 추천 제목은 "정상 작동한 AI 돌봄의 실패"다. 부제는 "2036년, 대시보드는 파란색이었고 아무도 문을 두드리지 않았다"가 좋다.
 
+## 공고문 대응
+
+- 필수 요소: 예견된 실패, 원인 진단, 대응 방안이 각각 페이지의 Pre-Mortem Report와 CARE+ Protocol에 대응된다.
+- 심사 기준: 참신성은 "정상 작동의 실패", 인과성은 2026년 지표 설계에서 2036년 고립 표준화로 이어지는 역추적, 실행력은 5년 내 공공 돌봄 계약·감사·UI 기준 변경, 표현력은 디오라마와 끊어진 접촉선 은유로 담당한다.
+- 보완 자료 성격: 공고문상 심사는 1페이지 제안서 중심이므로 GitHub Pages는 외부 URL 형태의 선택 보완 자료로 둔다.
+
 ## 참고 근거
 
+- KAIST 실패연구소, "2026 AI x 실패 아이디어 공모전 가이드북", 2026.
+- 보건복지부, "2024년 고독사 사망자 실태조사 결과 발표", 2024. https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1483372&mid=a10503010100
+- 국가데이터처/통계청, "2024 통계로 보는 1인가구", 2024. https://kostat.go.kr/board.es?mid=a10301010000&bid=10820&act=view&list_no=434103
+- 국가데이터처/통계청, "2024 고령자통계", 2024. https://kostat.go.kr/board.es?mid=a10301010000&bid=10820&act=view&list_no=432917
 - U.S. Surgeon General, "Our Epidemic of Loneliness and Isolation", 2023. https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf
-- Holt-Lunstad et al., "Loneliness and Social Isolation as Risk Factors for Mortality: A Meta-Analytic Review", Perspectives on Psychological Science, 2015. https://doi.org/10.1177/1745691614568352
+- Holt-Lunstad et al., "Loneliness and Social Isolation as Risk Factors for Mortality: A Meta-Analytic Review", Perspectives on Psychological Science, 2015. https://pubmed.ncbi.nlm.nih.gov/25910392/
 - NIST, "AI Risk Management Framework", 2023. https://www.nist.gov/itl/ai-risk-management-framework
-- EU AI Act high-risk AI summary, 2024. https://artificialintelligenceact.eu/high-level-summary/
+- European Union, "Regulation (EU) 2024/1689, Artificial Intelligence Act", 2024. https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng
 - Green & Chen, "Algorithmic Risk Assessments Can Alter Human Decision-Making Processes in High-Stakes Government Contexts", 2020/2021. https://arxiv.org/abs/2012.05370
 - Green, "The Flaws of Policies Requiring Human Oversight of Government Algorithms", 2021/2022. https://arxiv.org/abs/2109.05067
