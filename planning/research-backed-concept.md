@@ -51,7 +51,7 @@ EU AI Act의 고위험 AI 분류는 공공기관의 급여·서비스 자격 평
 
 ## 제안서 핵심 문장
 
-2036년의 실패는 AI 돌봄이 오작동한 사건이 아니었다. AI는 자신에게 주어진 목표를 정확히 수행했다. 위험 점수를 낮추고, 방문 우선순위를 최적화하고, 처리 건수를 늘렸다. 다만 2026년의 우리가 돌봄의 목표를 잘못 입력했다. 사람의 안전은 측정했지만, 사람이 도움을 청할 수 있는 관계는 측정하지 않았다. 그때 혼자 사는 고령자 다섯 중 한 명은 "도움받을 사람이 없다"고 이미 외쳤다. 우리는 그 외침을 설문 응답이라고 불렀다.
+2036년의 실패는 AI 돌봄이 오작동한 사건이 아니었다. AI는 자신에게 주어진 목표를 정확히 수행했다. 위험 점수를 낮추고, 방문 우선순위를 최적화하고, 처리 건수를 늘렸다. 다만 2026년의 우리가 돌봄의 목표를 잘못 입력했다. 사람의 안전은 측정했지만, 사람이 도움을 청할 수 있는 관계는 측정하지 않았다. 그때 1인 가구의 절반 가까이는 자주 또는 가끔 외롭다고 이미 답했다. 우리는 그 외침을 사회적 관계 문항이라고 불렀다.
 
 ## 2036년 실패 장면
 
@@ -104,7 +104,7 @@ AI 권고, 기관 배정, 현장 조치, 방문 생략 사유를 하나의 책�
 
 ### 원인 진단
 
-2026년의 우리는 돌봄의 성공을 관계 회복이 아니라 처리 건수, 비용 절감, 위험 점수 하락으로 측정했다. 혼자 사는 고령자 다섯 중 한 명은 도움받을 사람이 없다고 이미 외쳤지만, 우리는 그 외침을 설문 응답이라고 불렀다. 기록되지 않은 것은 없는 일이 됐다.
+2026년의 우리는 돌봄의 성공을 관계 회복이 아니라 처리 건수, 비용 절감, 위험 점수 하락으로 측정했다. 2025년 1인 가구의 48.9%는 자주 또는 가끔 외롭다고 이미 답했지만, 우리는 그 외침을 사회적 관계 문항이라고 불렀다. 기록되지 않은 것은 없는 일이 됐다.
 
 ### 대응 방안
 
@@ -114,8 +114,8 @@ AI 권고, 기관 배정, 현장 조치, 방문 생략 사유를 하나의 책�
 
 - KAIST 실패연구소, "2026 AI x 실패 아이디어 공모전 가이드북", 2026.
 - 보건복지부, "2024년 고독사 사망자 실태조사 결과 발표", 2024. https://www.mohw.go.kr/board.es?act=view&bid=0027&list_no=1483372&mid=a10503010100
-- 국가데이터처/통계청, "2024 통계로 보는 1인가구", 2024. https://kostat.go.kr/board.es?mid=a10301010000&bid=10820&act=view&list_no=434103
-- 국가데이터처/통계청, "2024 고령자통계", 2024. https://kostat.go.kr/board.es?mid=a10301010000&bid=10820&act=view&list_no=432917
+- 국가데이터처, "2025 통계로 보는 1인가구", 2025. https://mods.go.kr/board.es?act=view&bid=10820&list_no=442130&mid=a10301010000
+- 국가데이터처, "2025 고령자 통계", 2025. https://mods.go.kr/board.es?act=view&bid=10820&list_no=438832&mid=a10301010000
 - U.S. Surgeon General, "Our Epidemic of Loneliness and Isolation", 2023. https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf
 - Holt-Lunstad et al., "Loneliness and Social Isolation as Risk Factors for Mortality: A Meta-Analytic Review", Perspectives on Psychological Science, 2015. https://pubmed.ncbi.nlm.nih.gov/25910392/
 - NIST, "AI Risk Management Framework", 2023. https://www.nist.gov/itl/ai-risk-management-framework
