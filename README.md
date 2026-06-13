@@ -2,7 +2,7 @@
 
 KAIST Failure Lab 2026 AIxFailure Idea Contest submission.
 
-A 2036 future-failure scenario where an AI care system reports every metric as normal while home visits and social ties disappear.
+A 2036 future-failure scenario where an AI care system reports every metric as normal while home visits and social ties disappear. The live page is now an immersive chaptered diorama experience.
 
 ## Live Page
 
@@ -16,8 +16,11 @@ The live page is designed as a dystopian cyberpunk diorama: a dark public-housin
 
 ## Files
 
-- `index.html` - responsive public submission page
+- `index.html` - immersive responsive diorama experience
+- `experience.css` - visual system, responsive layout, rain/diorama styling
+- `experience.js` - chapter progress, HUD state, canvas rain, and interaction logic
 - `proposal.html` - A4 one-page proposal layout
+- `styles.css` - proposal page stylesheet
 - `output/playwright/proposal.pdf` - generated one-page PDF proposal
 - `planning/research-backed-concept.md` - research-backed planning document
 - `assets/contact-floor-tower-cyberpunk.png` - generated diorama hero visual
