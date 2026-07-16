@@ -90,17 +90,6 @@ async function auditPage(pathname, viewport, screenshotName) {
 
 await auditPage("/index.html", { width: 1365, height: 768 }, "desktop-index.png");
 await auditPage("/index.html", { width: 390, height: 844 }, "mobile-index.png");
-await auditPage("/proposal.html", { width: 794, height: 1123 }, "proposal-page.png");
-
-const proposal = await browser.newPage({ viewport: { width: 794, height: 1123 } });
-await proposal.goto(`${baseUrl}/proposal.html`, { waitUntil: "networkidle" });
-await proposal.pdf({
-  path: `${outDir}/proposal.pdf`,
-  format: "A4",
-  printBackground: true,
-  margin: { top: "0", right: "0", bottom: "0", left: "0" },
-});
-await proposal.close();
 
 await browser.close();
 if (server) await new Promise((resolve) => server.close(resolve));

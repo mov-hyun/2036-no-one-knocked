@@ -48,7 +48,6 @@
 
   var sceneEffects = {
     ch1: function () { body.classList.add("hud-on"); },
-    ch2: function () { startTicks(); },
     ch3: function () {
       runDaysCounter();
       showContactLine("측정 안 함", "");
@@ -110,15 +109,16 @@
   var bootEl = document.querySelector("[data-boot]");
   var BOOT_LINES = [
     "SEOUL METROPOLITAN CARE GRID v9.4",
-    "정기 야간 감사 · 2036-03-14 04:12:07 KST",
+    "정기 감사 · 2036-11-18 09:02:00 KST",
     "----------------------------------------",
-    "감시 가구 ............ 1,248 / 1,248",
-    "생체 지표 ............ 전 가구 정상",
-    "복약 순응도 .......... 99.2%",
-    "평균 위험 점수 ....... 0.12 (▼ 전월 대비)",
-    "예산 집행 효율 ....... +18.4%",
+    "감사 대상 ............ 김OO(82)",
+    "복약 이행 ............ 100% NORMAL",
+    "수면 점수 ............ 91 NORMAL",
+    "전력 사용 ............ NORMAL",
+    "김OO 위험 점수 ....... 0.11 LOW",
+    "대면 접촉 ............ 측정 안 함",
     "----------------------------------------",
-    "판정: 이상 없음 · 조치 필요 가구 0"
+    "판정: ALL GREEN · NO ALERT"
   ];
 
   function typeBoot() {
@@ -161,24 +161,7 @@
   }
   typeBoot();
 
-  /* ---------- 5. 제2장 실시간 지표 ---------- */
-  var tickStarted = false;
-  function startTicks() {
-    if (tickStarted || reduceMotion) return;
-    tickStarted = true;
-    var hr = document.querySelector('[data-tick="hr"]');
-    var steps = document.querySelector('[data-tick="steps"]');
-    var stepCount = 1847;
-    setInterval(function () {
-      if (hr) hr.textContent = String(60 + Math.floor(Math.random() * 5));
-      if (steps && Math.random() < 0.4) {
-        stepCount += Math.floor(Math.random() * 3);
-        steps.textContent = stepCount.toLocaleString("ko-KR");
-      }
-    }, 1600);
-  }
-
-  /* ---------- 6. 제3장 412일 카운터 ---------- */
+  /* ---------- 5. 제3장 412일 카운터 ---------- */
   var daysEl = document.querySelector("[data-days]");
   var daysDone = false;
   function runDaysCounter() {
@@ -201,33 +184,27 @@
   var CARE = [
     {
       title: "Contact Floor",
-      body: "위험 점수와 무관하게 최소 대면 접촉선을 둔다. 월 1회 이상 대면 확인 또는 지역 관계망 확인을 공공 AI 돌봄의 기본 조건으로 만든다. 점수가 아무리 낮아도, 이 선 아래로는 내려가지 않는다.",
-      impl: "실행 주체: 보건복지부·지자체 — 공공 돌봄 위탁 계약의 표준 조항으로 5년 내 의무화",
+      body: "공공 돌봄 위탁 표준계약서에 위험도와 무관한 월 1회 대면 방문 최저선을 명시한다. AI 지표가 좋아도 이 선은 삭제할 수 없다.",
+      impl: "실행 주체: 보건복지부·지자체 · 기한: 2027년",
       hud: "최저선 설정 · 月 1회"
     },
     {
       title: "Accountability Log",
-      body: "모델 권고, 기관 배정, 현장 조치, 방문 생략 사유를 하나의 책임 로그로 남긴다. 「AI가 권고했다」는 말이 책임의 끝이 되지 않게 한다.",
-      impl: "실행 주체: 운영 기관 — 권고·결정·생략 사유의 단일 기록 의무, 감사 시 공개",
+      body: "방문 생략 등 AI 판단 이력을 추적·감사할 수 있는 책임 로그에 남긴다. 생략도 기록되는 결정으로 다룬다.",
+      impl: "실행 주체: 플랫폼 기업 · 기한: 2028년",
       hud: "책임 로그 · 기록 중"
     },
     {
-      title: "Relationship Metric",
-      body: "복약 성공률만 보지 않는다. 도움을 청할 수 있는 사람 수, 최근 대면 접촉, 정기 연락망, 지역 참여도를 핵심 성과 지표로 둔다. 측정되는 것만이 지켜진다.",
-      impl: "실행 주체: 평가·예산 부처 — 돌봄 사업 성과 평가표에 관계 지표 반영",
+      title: "Relational Metrics",
+      body: "성과 평가 KPI를 접속 건수와 응답률에서 대면 접촉률, 관계망 크기 변화, 마지막 대면 접촉 경과일 중심으로 개편한다.",
+      impl: "실행 주체: 복지부·평가기관 · 기한: 2029년",
       hud: "관계 지표 · 신설"
     },
     {
-      title: "Exit & Escalation",
-      body: "당사자는 AI 돌봄 방식과 데이터 수집 범위를 거부하거나 대면 지원으로 전환할 수 있어야 한다. 「사람이 와줬으면 한다」는 요청이 시스템 안에 버튼으로 존재해야 한다.",
-      impl: "실행 주체: 서비스 설계 — 전환 요청 절차를 기본 UI에 포함, 처리 기한 명시",
-      hud: "전환 요청 · 접수 가능"
-    },
-    {
-      title: "Institutional Oversight",
-      body: "인간 감독은 담당자 한 명의 최종 클릭이 아니다. 기관이 AI 도입의 적절성, 지표 설계, 현장 영향, 이의제기 절차를 공개적으로 설명하고 검증받는 구조여야 한다.",
-      impl: "실행 주체: 의회·감사기구·시민사회 — 연 1회 공개 검증 및 이의제기 창구 운영",
-      hud: "기관 감독 · 공개 검증"
+      title: "Escalation Rule",
+      body: "지표가 정상이어도 대면 접촉 공백이 기준일을 넘으면 사람 방문을 자동 발령한다. 낮은 위험 점수가 방문 공백을 정당화하지 못하게 한다.",
+      impl: "실행 주체: 지자체 관제센터 · 기한: 2030년",
+      hud: "접촉 공백 · 자동 발령"
     }
   ];
 
@@ -371,11 +348,11 @@
     })();
   }
 
-  /* ---------- HUD 시계: 2036-03-14 04:12:07부터 흐른다 ---------- */
+  /* ---------- HUD 시계: 2036-11-18 09:02:00부터 흐른다 ---------- */
   var clockEl = document.querySelector("[data-hud-clock]");
   if (clockEl) {
     // 표시 시각을 보는 사람의 시간대와 무관하게 KST로 고정
-    var t0 = Date.UTC(2036, 2, 14, 4, 12, 7);
+    var t0 = Date.UTC(2036, 10, 18, 9, 2, 0);
     var start = Date.now();
     function pad(n) { return String(n).padStart(2, "0"); }
     setInterval(function () {
